@@ -7,4 +7,4 @@ It's perfect for learning Cofeescript or testing code in the browser.
 Latte gives you also the possibility to save and share your awesomeness with others.
 
 # testing 
-Just navigate [here](http://haithembelhaj.github.com/lattee/) to test it.
+Just navigate [here](http://haithembelhaj.github.com/Lattee/) to test it.
