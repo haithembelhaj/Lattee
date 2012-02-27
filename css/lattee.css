@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('ballpark_weiner-webfont.eot');
+    src: url('ballpark_weiner-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ballpark_weiner-webfont.woff') format('woff'),
+         url('ballpark_weiner-webfont.ttf') format('truetype'),
+         url('ballpark_weiner-webfont.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #657b83;
+	background-color: #fdf6e3;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#header{
+	height: 90px;
+	text-shadow: 0px 0.5px 1px #AAA;
+	transition: all 2s;
+	-moz-transition: all 2s; 
+	-webkit-transition: all 2s;
+	-o-transition: all 2s; 
+}
+
+#header:hover{
+	height: 170px;
+}
+
+#header #lattee{
+	font-family: "BallparkWeiner",Helvetica,Arial,sans-serif;
+	background-image: url('../images/lattee.png');
+	background-size: 65px;
+	background-repeat: no-repeat;
+	font-size: 70px;
+	margin-left: 100px;
+	background-position: 0px 4px;
+	padding-left: 67px;
+	color: #A37547;
+}
+
+#header #info{
+	font-family: "BallparkWeiner",Helvetica,Arial,sans-serif;
+	position: absolute;
+	top: 62px;
+	left: 300px;
+	color: #A37547;
+}
+
+#header #info span{
+	color: white;
+	text-shadow: 0px 0px 4px #888;
+	font-size: 20px;
+}
+
+#header #more{
+	margin: 20px 0px 0px 200px;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+#terminal{
+	position: absolute;
+	left: 0px;
+	width: 60%;
+    height: 80%;
+}
+
+#compiled{
+	position: absolute;
+	top: 80px;
+	right: 50px;
+	width: auto;
+}
+
+#error{
+	position: fixed;
+	bottom: 50px;
+	color: red;
+}
+
+.ace_scroller {
+    overflow-x: auto !important;
+}
+
+.ace_sb {
+    overflow-y: auto !important;
+}
