@@ -1,7 +1,7 @@
 (function() {
 
   $(function() {
-    var JavaScriptMode, compileSource, hash, sourceFragment, src;
+    var JavaScriptMode, compileSource, hash, log, sourceFragment, src;
     window.editor = ace.edit("terminal");
     sourceFragment = "lattee:";
     editor.setTheme("ace/theme/solarized_light");
@@ -21,7 +21,7 @@
         });
         $('#error').hide();
       } catch (error) {
-        $('#error').text(error.message).show();
+        $('#error').text(error.message).css("color", "red").show();
       }
       $('#share').attr('href', "#" + sourceFragment + (encodeURIComponent(source)));
       return $('#save').attr('href', "data:text/coffeescript;charset=utf-8;base64," + (Base64.encode(source)));
@@ -42,9 +42,14 @@
       compileSource();
       return false;
     };
+    window.onerror = function(msg, url, line) {
+      return $('#error').text("msg:" + msg + " url:" + url + " line:" + line).css("color", "red").show();
+    };
+    log = function(msg) {
+      return $('#error').text("" + msg).css("color", "black").show();
+    };
     $(document.body).keydown(function(e) {
-      if (e.which === 27) closeMenus();
-      if (e.which === 13 && (e.metaKey || e.ctrlKey)) return evalJS();
+      if (e.which === 82 && (e.metaKey || e.ctrlKey)) return evalJS();
     });
     $('#share').click(function(e) {
       window.location = $(this).attr("href");
