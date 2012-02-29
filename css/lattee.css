@@ -98,7 +98,8 @@ a{
 }
 
 #error{
-	height: 25%;
+	position: fixed;
+	bottom: 6%;
 	color: red;
 	font-size: 13px;
 }
