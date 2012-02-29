@@ -15,7 +15,7 @@ $ ->
       $('#compiled pre code').each (i,e)-> hljs.highlightBlock e, '    '
       $('#error').hide()
     catch error
-      $('#error').text(error.message).show()
+      $('#error').text(error.message).css("color", "red").show()
 
     # Update permalink
     $('#share').attr 'href', "##{sourceFragment}#{encodeURIComponent source}"
@@ -37,13 +37,18 @@ $ ->
     compileSource()
     false
 
+  #loggin and error
+  window.onerror = (msg , url, line)->
+    $('#error').text("msg:#{msg} url:#{url} line:#{line}").css("color", "red").show()
+    
+  log = (msg)->
+    $('#error').text("#{msg}").css("color", "black").show()
 
-  # Dismiss console if Escape pressed or click falls outside console
-  # Trigger Run button on Ctrl-Enter
+
+  # Trigger Run button on Ctrl-R
   $(document.body)
     .keydown (e) -> 
-      closeMenus() if e.which == 27
-      evalJS() if e.which == 13 and (e.metaKey or e.ctrlKey)
+      evalJS() if e.which == 82 and (e.metaKey or e.ctrlKey)
 
   $('#share').click (e) ->
     window.location = $(this).attr("href")

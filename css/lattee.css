@@ -47,6 +47,7 @@ a{
 	background-position: 0px 4px;
 	padding-left: 67px;
 	color: #A37547;
+	width: 60%;
 }
 
 #header #info{
@@ -73,8 +74,10 @@ a{
 	position: absolute;
 	left: 0px;
 	width: 60%;
-    height: 80%;
+    height: 75%;
     min-width: 500px;
+    padding-top: 20px;
+    background-color: #fdf6e3;
 }
 
 #compiled{
@@ -85,7 +88,9 @@ a{
 	transition: all 1s;
 	-moz-transition: all 1s; 
 	-webkit-transition: all 1s;
-	-o-transition: all 1s; 
+	-o-transition: all 1s;
+	background-color: #fdf6e3;
+	z-index: 10;
 }
 
 #compiled:hover{
@@ -94,7 +99,7 @@ a{
 
 #error{
 	position: fixed;
-	bottom: 50px;
+	bottom: 25%;
 	color: red;
 }
 
