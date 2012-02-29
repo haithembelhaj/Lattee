@@ -42,8 +42,8 @@
       compileSource();
       return false;
     };
-    window.onerror = function(msg, url, line) {
-      return $('#error').text("msg:" + msg + " url:" + url + " line:" + line).css("color", "red").show();
+    window.onerror = function(msg) {
+      return $('#error').text("ERROR:" + msg).css("color", "red").show();
     };
     log = function(msg) {
       return $('#error').text("" + msg).css("color", "black").show();
