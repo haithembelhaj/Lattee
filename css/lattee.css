@@ -98,9 +98,9 @@ a{
 }
 
 #error{
-	position: fixed;
-	bottom: 25%;
+	height: 25%;
 	color: red;
+	font-size: 13px;
 }
 
 .ace_scroller {
