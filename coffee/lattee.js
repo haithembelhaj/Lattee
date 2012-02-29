@@ -23,7 +23,7 @@
       } catch (error) {
         $('#error').text(error.message).css("color", "red").show();
       }
-      $('#share').attr('href', "#" + sourceFragment + (encodeURIComponent(source)));
+      $('#share').attr('href', "#" + sourceFragment + (Base64.encode(source)));
       return $('#save').attr('href', "data:text/coffeescript;charset=utf-8;base64," + (Base64.encode(source)));
     };
     editor.getSession().on('change', function() {
@@ -63,7 +63,7 @@
     hash = decodeURIComponent(location.hash.replace(/^#/, ''));
     if (hash.indexOf(sourceFragment) === 0) {
       src = hash.substr(sourceFragment.length);
-      loadConsole(src);
+      loadConsole(Base64.decode(src));
     }
     return compileSource();
   });
