@@ -31,6 +31,7 @@ a{
 	-moz-transition: all 1s; 
 	-webkit-transition: all 1s;
 	-o-transition: all 1s; 
+	width: 60%;
 }
 
 #header:hover{
@@ -47,7 +48,6 @@ a{
 	background-position: 0px 4px;
 	padding-left: 67px;
 	color: #A37547;
-	width: 60%;
 }
 
 #header #info{
