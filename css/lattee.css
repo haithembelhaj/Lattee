@@ -82,7 +82,7 @@ a{
 
 #compiled{
 	position: absolute;
-	top: 80px;
+	top: 100px;
 	right: 50px;
 	width: 100px;
 	transition: all 1s;
@@ -91,10 +91,11 @@ a{
 	-o-transition: all 1s;
 	background-color: #fdf6e3;
 	z-index: 10;
+	height: 75%;
 }
 
 #compiled:hover{
-	width: 400px !important;
+	width: 800px !important;
 }
 
 #error{
