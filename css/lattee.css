@@ -83,7 +83,7 @@ a{
 #compiled{
 	position: absolute;
 	top: 100px;
-	left: 90%;
+	right: -90%;
 	transition: all 1s;
 	-moz-transition: all 1s; 
 	-webkit-transition: all 1s;
@@ -94,7 +94,6 @@ a{
 }
 
 #compiled:hover{
-	left: auto !important;
 	right: 10px;
 }
 
