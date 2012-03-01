@@ -95,7 +95,7 @@ a{
 
 #compiled:hover{
 	left: 60%;
-	right: 0px;
+	right: 10px !important;
 }
 
 #error{
