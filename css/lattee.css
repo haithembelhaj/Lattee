@@ -94,7 +94,7 @@ a{
 }
 
 #compiled:hover{
-	left: inherit !important;
+	left: auto !important;
 	right: 10px;
 }
 
