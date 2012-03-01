@@ -94,8 +94,8 @@ a{
 }
 
 #compiled:hover{
+	left: 60%;
 	right: 0px;
-	left: none;
 }
 
 #error{
