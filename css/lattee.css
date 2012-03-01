@@ -83,7 +83,7 @@ a{
 #compiled{
 	position: absolute;
 	top: 100px;
-	right: 0px;
+	left: 90%;
 	transition: all 1s;
 	-moz-transition: all 1s; 
 	-webkit-transition: all 1s;
@@ -91,13 +91,10 @@ a{
 	background-color: #fdf6e3;
 	z-index: 10;
 	height: 75%;
-	width: 100px;
-	overflow-x: hidden;
 }
 
 #compiled:hover{
-	width: auto !important;
-	right: 10px;
+	width: 60%;
 }
 
 #error{
