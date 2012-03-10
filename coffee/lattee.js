@@ -49,7 +49,7 @@
       return $('#error').text("" + msg).css("color", "black").show();
     };
     $(document.body).keydown(function(e) {
-      if (e.which === 82 && (e.metaKey || e.ctrlKey)) return evalJS();
+      if (e.which === 88 && (e.metaKey || e.ctrlKey)) return evalJS();
     });
     $('#share').click(function(e) {
       window.location = $(this).attr("href");
