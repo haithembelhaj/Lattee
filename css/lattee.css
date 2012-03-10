@@ -31,6 +31,7 @@ a{
 	-moz-transition: all 1s; 
 	-webkit-transition: all 1s;
 	-o-transition: all 1s; 
+	width: 60%;
 }
 
 #header:hover{
@@ -47,7 +48,6 @@ a{
 	background-position: 0px 4px;
 	padding-left: 67px;
 	color: #A37547;
-	width: 60%;
 }
 
 #header #info{
@@ -82,25 +82,26 @@ a{
 
 #compiled{
 	position: absolute;
-	top: 80px;
-	right: 50px;
-	width: 100px;
+	top: 135px;
+	left: 90%;
 	transition: all 1s;
 	-moz-transition: all 1s; 
 	-webkit-transition: all 1s;
 	-o-transition: all 1s;
 	background-color: #fdf6e3;
 	z-index: 10;
+	height: 75%;
 }
 
 #compiled:hover{
-	width: 400px !important;
+	left: 45%;
 }
 
 #error{
 	position: fixed;
-	bottom: 25%;
+	bottom: 8%;
 	color: red;
+	font-size: 13px;
 }
 
 .ace_scroller {
