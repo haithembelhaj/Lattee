@@ -17,6 +17,7 @@ body{
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	overflow: hidden;
+	margin:	0;
 }
 
 a{
@@ -31,7 +32,8 @@ a{
 	-moz-transition: all 1s; 
 	-webkit-transition: all 1s;
 	-o-transition: all 1s; 
-	width: 60%;
+	width: 100%;
+	padding-top: 10px;
 }
 
 #header:hover{
