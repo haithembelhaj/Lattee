@@ -45,7 +45,7 @@ $ ->
     $('#error').text("#{msg}").css("color", "black").show()
 
 
-  # Trigger Run button on Ctrl-R
+  # Trigger Run button on Ctrl-X
   $(document.body)
     .keydown (e) -> 
       evalJS() if e.which == 88 and (e.metaKey or e.ctrlKey)
