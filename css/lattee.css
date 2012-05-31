@@ -91,6 +91,7 @@ a{
 	background-color: #fdf6e3;
 	z-index: 10;
 	height: 75%;
+	width: 60%;
 }
 
 #compiled:hover{
